@@ -127,8 +127,17 @@ def marker_width_from_code(code):
     if code <= 27:
         return ARENA_WIDTH
 
+    elif code <= 31:
+        return ROBOT_WIDTH
+
+    elif code <= 40:
+        return PEDESTAL_WIDTH
+
+    elif code <= 55:
+        return TOKEN_WIDTH
+
     else:
-        return TOKEN_WIDTH # same for all others, currently
+        return None
 
 
 def margins_from_code(code):
@@ -142,14 +151,11 @@ def margins_from_code(code):
     elif code <= 31:
         return (ROBOT_MARGIN_LEFT, ROBOT_MARGIN_TOP)
 
-    elif code <= 71:
+    elif code <= 40:
+        return (PEDESTAL_MARGIN_LEFT, PEDESTAL_MARGIN_TOP)
+
+    elif code <= 55:
         return (TOKEN_MARGIN_LEFT, TOKEN_MARGIN_TOP)
-
-    elif code <= 75:
-        return (BUCKET_MARGIN_LEFT, BUCKET_MARGIN_TOP)
-
-    elif code <= 79:
-        return (BUCKET_MARGIN_LEFT, BUCKET_MARGIN_TOP)
 
     else:
         return None
