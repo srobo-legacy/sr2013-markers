@@ -74,14 +74,11 @@ def desc_from_code(code):
     elif code <= 31:
         return ROBOT_DESC
 
-    elif code <= 71:
+    elif code <= 40:
+        return PEDESTAL_DESC
+
+    elif code <= 55:
         return TOKEN_DESC
-
-    elif code <= 75:
-        return BUCKET_SIDE_DESC
-
-    elif code <= 79:
-        return BUCKET_END_DESC
 
     else:
         return None
@@ -98,14 +95,11 @@ def prefix_from_code(code):
     elif code <= 31:
         return ROBOT_PREFIX
 
-    elif code <= 71:
+    elif code <= 40:
+        return PEDESTAL_PREFIX
+
+    elif code <= 55:
         return TOKEN_PREFIX
-
-    elif code <= 75:
-        return BUCKET_SIDE_PREFIX
-
-    elif code <= 79:
-        return BUCKET_END_PREFIX
 
     else:
         return None
