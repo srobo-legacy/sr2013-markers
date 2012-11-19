@@ -46,7 +46,7 @@ ROBOT_PREFIX       = "robot-"
 ARENA_DESC       = "ARENA"
 TOKEN_DESC       = "TOKEN"
 ROBOT_DESC       = "ROBOT"
-PEDESTAL_DESC       = "ROBOT"
+PEDESTAL_DESC    = "PEDESTAL"
 
 
 
