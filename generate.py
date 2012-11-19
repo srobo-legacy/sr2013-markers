@@ -225,45 +225,10 @@ def gen_generic(num, four_up=True):
     finish_surface(s)
 
 
-def gen_arena():
-    for i in range(0, 28):
-        gen_generic(i, False)
-        gen_generic(i+100, False)
-
-
-def gen_robot():
-    for i in range(28, 32):
-        gen_generic(i)
-        gen_generic(i+100)
-
-
-def gen_token():
-    for i in range(32, 72):
-        gen_generic(i)
-        gen_generic(i+100)
-
-
-def gen_bucket_side():
-    for i in range(72, 76):
-        gen_generic(i)
-        gen_generic(i+100)
-
-
-def gen_bucket_end():
-    for i in range(76, 80):
-        gen_generic(i)
-        gen_generic(i+100)
-
-
-
 def gen_all():
-
-    gen_arena()
-    gen_robot()
-    gen_token()
-    gen_bucket_side()
-    gen_bucket_end()
-
+    for i in xrange(55):
+        gen_generic(i)
+        gen_generic(i+100)
 
 
 if __name__ == '__main__':
