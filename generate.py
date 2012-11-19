@@ -32,8 +32,8 @@ A3_HEIGHT          = 420 # mm
 
 # FILE NAMES
 
-SET_A_DIR          = "marker_set_a/"
-SET_B_DIR          = "marker_set_b/"
+SET_A_DIR          = "dev/"
+SET_B_DIR          = "competition/"
 
 ARENA_PREFIX       = "arena-"
 TOKEN_PREFIX       = "token-"
