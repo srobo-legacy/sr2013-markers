@@ -227,8 +227,12 @@ def gen_generic(num, four_up=True):
 
 def gen_all():
     for i in range(0, 55):
-        gen_generic(i)
-        gen_generic(i+100)
+        four_up = False
+        if desc_from_code(i) == 'ROBOT':
+            four_up = True
+
+        gen_generic(i, four_up)
+        gen_generic(i+100, four_up)
 
 
 if __name__ == '__main__':
