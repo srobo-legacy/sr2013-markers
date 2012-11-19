@@ -10,16 +10,16 @@ from markergen import *
 # DIMENSIONS
 
 ARENA_WIDTH        = 250 # mm
-TOKEN_WIDTH        = 100 # mm
-BUCKET_WIDTH       = 100 # mm
 ROBOT_WIDTH        = 100 # mm
+PEDESTAL_WIDTH     = 200 # mm
+TOKEN_WIDTH        = 200 # mm
 
 ARENA_MARGIN_LEFT  = 5 # mm
 ARENA_MARGIN_TOP   = 5 # mm
 TOKEN_MARGIN_LEFT  = 5 # mm
 TOKEN_MARGIN_TOP   = 5 # mm
-BUCKET_MARGIN_LEFT = 5 # mm
-BUCKET_MARGIN_TOP  = 5 # mm
+PEDESTAL_MARGIN_LEFT = 5 # mm
+PEDESTAL_MARGIN_TOP  = 5 # mm
 ROBOT_MARGIN_LEFT  = 5 # mm
 ROBOT_MARGIN_TOP   = 5 # mm
 
@@ -37,8 +37,7 @@ SET_B_DIR          = "marker_set_b/"
 
 ARENA_PREFIX       = "arena-"
 TOKEN_PREFIX       = "token-"
-BUCKET_SIDE_PREFIX = "bucket-side-"
-BUCKET_END_PREFIX  = "bucket-end-"
+PEDESTAL_PREFIX    = "pedestal-"
 ROBOT_PREFIX       = "robot-"
 
 
@@ -46,9 +45,8 @@ ROBOT_PREFIX       = "robot-"
 
 ARENA_DESC       = "ARENA"
 TOKEN_DESC       = "TOKEN"
-BUCKET_SIDE_DESC = "BUCKET SIDE"
-BUCKET_END_DESC  = "BUCKET END"
 ROBOT_DESC       = "ROBOT"
+PEDESTAL_DESC       = "ROBOT"
 
 
 
