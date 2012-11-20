@@ -77,7 +77,7 @@ def desc_from_code(code):
     elif code <= 40:
         return PEDESTAL_DESC
 
-    elif code <= 55:
+    elif code <= 64:
         return TOKEN_DESC
 
     else:
@@ -98,7 +98,7 @@ def prefix_from_code(code):
     elif code <= 40:
         return PEDESTAL_PREFIX
 
-    elif code <= 55:
+    elif code <= 64:
         return TOKEN_PREFIX
 
     else:
@@ -133,7 +133,7 @@ def marker_width_from_code(code):
     elif code <= 40:
         return PEDESTAL_WIDTH
 
-    elif code <= 55:
+    elif code <= 64:
         return TOKEN_WIDTH
 
     else:
@@ -154,7 +154,7 @@ def margins_from_code(code):
     elif code <= 40:
         return (PEDESTAL_MARGIN_LEFT, PEDESTAL_MARGIN_TOP)
 
-    elif code <= 55:
+    elif code <= 64:
         return (TOKEN_MARGIN_LEFT, TOKEN_MARGIN_TOP)
 
     else:
@@ -226,7 +226,7 @@ def gen_generic(num, four_up=True):
 
 
 def gen_all():
-    for i in xrange(55):
+    for i in xrange(64+1):
         gen_generic(i)
         gen_generic(i+100)
 
